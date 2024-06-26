@@ -4,6 +4,8 @@
 # Ignore coverage reports
 coverage/
 
+# Ignore .env file
+.env
 
 # Ignore build output
 build/
