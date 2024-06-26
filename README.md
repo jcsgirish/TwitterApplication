@@ -59,7 +59,7 @@ This is a full-stack application built using:
 ### Frontend Setup
 1. Navigate to the `frontend` directory:
     ```sh
-  cd TwitterApplication/frontend
+    cd TwitterApplication/frontend
     ```
 
 2. Install dependencies:
