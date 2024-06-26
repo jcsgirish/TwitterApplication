@@ -53,13 +53,13 @@ This is a full-stack application built using:
 
 4. Start the backend server:
     ```sh
-    npm start
+    npm run start-dev
     ```
 
 ### Frontend Setup
 1. Navigate to the `frontend` directory:
     ```sh
-    cd/frontend
+  cd TwitterApplication/frontend
     ```
 
 2. Install dependencies:
