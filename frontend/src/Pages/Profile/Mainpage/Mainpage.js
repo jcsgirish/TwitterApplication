@@ -34,7 +34,6 @@ function Mainpage({ user }) {
     axios.post("https://api.imgbb.com/1/upload?key=11df5efabaf9dab20e300a35cfb9b946", formData)
     .then(res => {
       const url = res.data.data.display_url;
-      console.log('imageurl', url)
       const userCoverImage = { email: user?.email, coverImage: url };
       if (url) {
         axios.patch(`http://localhost:5000/userUpdates/${user?.email}`, userCoverImage)
@@ -52,7 +51,7 @@ function Mainpage({ user }) {
     axios.post("https://api.imgbb.com/1/upload?key=11df5efabaf9dab20e300a35cfb9b946", formData)
       .then(res => {
         const url = res.data.data.display_url;
-        console.log('imageurl', url)
+ 
         const userprofileImage = { email: user?.email, profileImage: url };
         axios.patch(`http://localhost:5000/userUpdates/${user?.email}`, userprofileImage)
           .catch(error => console.error('Error updating user profile image:', error));

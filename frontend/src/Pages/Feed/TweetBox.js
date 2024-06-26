@@ -29,7 +29,7 @@ function TweetBox() {
     axios.post("https://api.imgbb.com/1/upload?key=11df5efabaf9dab20e300a35cfb9b946", formData)
       .then(res => {
         setImage(res.data.data.display_url);
-        console.log('Image URL:',res.data.data.display_url);
+  
       });
   };
 
@@ -45,8 +45,6 @@ function TweetBox() {
       photo: image,
       profileImage: profileImage
     };
-
-    console.log(userPost);
 
     fetch(`http://localhost:5000/post`, {
       method: 'POST',

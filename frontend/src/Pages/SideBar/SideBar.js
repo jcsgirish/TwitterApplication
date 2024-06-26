@@ -111,6 +111,7 @@ const [user] = useAuthState(auth)
           <div className='Menu'>
             <div className='MenuItem' onClick={handleExistingAccount}>Add an existing account</div>
             <div className='MenuItem' onClick={handleLogout}>Log out @{result}</div>
+            <div className='MenuItem' onClick={()=>setMenu(false)}>Close</div>
           </div>
         )}
       </div>

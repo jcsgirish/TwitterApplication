@@ -1,134 +1,223 @@
 .mainprofile {
-    flex: 1;
-  }
-  
-  .avatar-img {
-    margin-top: 2rem;
-  }
-  
+  flex: 1;
+}
+
+.avatar-img {
+  margin-top: 2rem;
+}
+
+.headingname {
+  margin-left: 3rem;
+  position: relative;
+  bottom: 3rem;
+}
+
+.vbadge {
+  color: #1a91da;
+}
+
+.avatarimage {
+  padding: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+.avatarimage:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+.centericon {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(88, 88, 88);
+  position: relative;
+  float: right;
+  left: 2rem;
+  z-index: 10;
+}
+
+.centericon:hover {
+  color: #1a91da;
+}
+
+.centerphotoicon {
+  position: relative !important;
+  bottom: 3rem !important;
+  left: 2rem !important;
+  font-size: 1rem !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.centerphotoicon:hover {
+  color: rgb(0, 110, 255);
+}
+
+.imageinput {
+  display: none;
+}
+
+.heading-3 {
+  margin-left: 2rem;
+  position: relative;
+  bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pheading {
+  margin-left: 3rem;
+  color: rgb(99, 97, 97);
+  position: relative;
+  bottom: 2.5rem;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.userinfo {
+  height: 10vh;
+  margin-bottom: 2rem;
+}
+
+.texttweets {
+  margin-left: 0.5rem;
+  font-size: larger;
+  color: #1a91da;
+}
+
+.profileposts {
+  background-color: rgb(27, 27, 27);
+  border-top: 1px solid rgb(177, 177, 180);
+  position: relative;
+  bottom: 10em;
+}
+
+.backarrow {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.coverimagecontainer {
+  padding: 1rem 0rem !important;
+  position: relative !important;
+  bottom: 5rem !important;
+  height: 32vh !important;
+  width: 77vh !important;
+  margin-top: 2rem !important;
+}
+
+.profilesection {
+  position: relative;
+  bottom: 10rem;
+}
+
+.imageprofile {
+  display: none;
+}
+
+.infocontains {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.locationandlink {
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.websiteicon a {
+  text-decoration: none;
+  color: #1a91da;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .headingname {
-    margin-left: 3rem;
-    position: relative;
+    margin-left: 1rem;
+    bottom: 2rem;
+  }
+
+  .avatar-img {
+    margin-top: 1rem;
+  }
+
+  .centericon {
+    left: 1rem;
+  }
+
+  .centerphotoicon {
+    bottom: 2rem;
+    left: 1rem;
+  }
+
+  .heading-3, .pheading {
+    margin-left: 1rem;
+  }
+
+  .coverimagecontainer {
+    width: 100%;
+    height: 20vh;
+    margin-top: 1rem;
     bottom: 3rem;
   }
-  
-  .vbadge {
-    color: #1a91da;
-  }
-  
-  .avatarimage {
-    padding: 1rem !important;
-    margin-left: 2rem !important;
-  }
-  
-  .avatarimage:hover {
-    background-color: rgb(146, 146, 146);
-  }
-  
-  .centericon {
-    display: flex ;
-    justify-content: center ;
-    font-size: 2rem;
-    color: rgb(88, 88, 88) ;
-    position: relative ;
-    float: right;
-    left: 2rem ;
-    z-index: 10;
-  }
-  .centericon:hover {
-    color: #1a91da;
-  }
-  
-  
-  .centerphotoicon {
-    position: relative !important;
-    bottom: 3rem !important;
-    left: 2rem !important;
-    font-size: 1rem !important;
-    color: rgb(255, 255, 255) !important;
-  }
- 
-  .centerphotoicon:hover {
-    color: rgb(0, 110, 255);
-  }
-  
-  .imageinput {
-    display: none;
-  }
-  
-  .heading-3 {
-    margin-left: 2rem;
-    position: relative;
-    bottom: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .pheading {
-    margin-left: 3rem;
-    color: rgb(99, 97, 97);
-    position: relative;
-    bottom: 2.5rem;
-    font-weight: bolder;
-    margin-bottom: 3rem;
-  }
-  
-  .userinfo {
-    height: 10vh;
-    margin-bottom: 2rem;
-  }
-  
-  .texttweets {
-    margin-left: 0.5rem;
-    font-size: larger;
-    color: #1a91da;
-  }
-  
-  .profileposts {
-    background-color: rgb(27, 27, 27);
-    border-top: 1px solid rgb(177, 177, 180);
-    position: relative;
-    bottom: 10em;
-  }
-  
-  .backarrow {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-  }
-  
-  .coverimagecontainer {
-    padding: 1rem 0rem !important;
-    position: relative !important;
-    bottom: 5rem !important;
-    height: 32vh !important;
-    width: 77vh !important;
-    margin-top: 2rem !important;
-  }
-  
+
   .profilesection {
-    position: relative;
-    bottom: 10rem;
+    bottom: 5rem;
   }
-  
-  .imageprofile {
-    display: none;
+}
+
+@media (max-width: 480px) {
+  .headingname {
+    margin-left: 0.5rem;
+    bottom: 1.5rem;
   }
-  
-  .infocontains {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+  .avatar-img {
+    margin-top: 0.5rem;
+  }
+
+  .centericon {
+    left: 0.5rem;
+  }
+
+  .centerphotoicon {
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+
+  .heading-3, .pheading {
     margin-left: 0.5rem;
   }
-  
-  .locationandlink {
-    font-size: large;
-    font-weight: bold;
-    text-decoration: none;
+
+  .coverimagecontainer {
+    width: 100%;
+    height: 15vh;
+    margin-top: 0.5rem;
+    bottom: 2rem;
   }
-  
-  .websiteicon a {
-    text-decoration: none;
-    color: #1a91da;
+
+  .profilesection {
+    bottom: 3rem;
   }
-  
+
+  .userinfo {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .texttweets {
+    font-size: medium;
+  }
+
+  .profileposts {
+    bottom: 5em;
+  }
+
+  .backarrow {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+  }
+}

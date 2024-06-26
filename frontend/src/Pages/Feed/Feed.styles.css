@@ -1,12 +1,13 @@
 .Feed {
   flex: 1;
   border-right: 1px solid rgb(105, 104, 104);
-  width: 85vh;
-  height: 100vh;
-  overflow-y: auto;
+  width: 80%;
+  height: 100%;
+  overflow-y: auto; /* Enable scrolling if content overflows */
 }
-.Feed::-webkit-scrollbar{
-  display: none;
+
+.Feed::-webkit-scrollbar {
+  display: none; /* Hide scrollbars */
 }
 
 .FeedHeader {
@@ -14,18 +15,24 @@
   flex-direction: column;
   position: sticky;
   top: 0;
-  width: 140%;
   background-color: black;
   z-index: 1001;
-  padding: 10px 5px ;
-}
-
-.feedborder {
-  margin-top: 0;
+  padding: 10px 5px;
+  height: 25vh;
 }
 
 .FeedPosts {
   display: flex;
   flex-direction: column;
   margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .FeedHeader {
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  .FeedPosts {
+    margin-top: 0.2rem; /* Adjusted margin for smaller screens */
+  }
 }

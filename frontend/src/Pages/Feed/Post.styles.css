@@ -1,34 +1,70 @@
-.post{
+.post {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center align content */
     margin-top: 1rem;
     margin-bottom: 2rem;
     width: 100%;
     border-bottom: 1px solid #1a91da;
-    margin-right: 3rem;
-}
-.post_avatar img{
+    padding-bottom: 1rem; /* Add padding instead of margin for spacing */
+  }
+  
+  .post_avatar img {
     border-radius: 5rem;
     width: 50px;
-    margin-right: 0.5rem;
-}
-.imagepost{
+    margin-bottom: 0.5rem; /* Adjust margin as needed */
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .imagepost {
     display: flex;
     justify-content: center;
-    margin-right: 3rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-}
-.post_footer{
+    overflow: hidden; /* Ensure images do not overflow on smaller screens */
+  }
+  
+  .post_footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensure items are evenly spaced */
+    align-items: center; /* Center align content */
     margin-bottom: 1rem;
-    margin-left: 1rem;
-}
-.postpublish{
- display: flex;
- margin-right: 3rem;
-}
-.verifiedbadge{
+    margin-left: 1rem; /* Add margin to the left for spacing */
+  }
+  
+  .postpublish {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center align content */
+    margin-bottom: 1rem;
+  }
+  
+  .verifiedbadge {
     color: #1a91da;
-}
+  }
+  
+  @media (min-width: 768px) {
+    .post {
+      flex-direction: row; /* Revert to row layout for larger screens */
+      justify-content: flex-start; /* Adjust alignment as needed */
+      align-items: center; /* Center align content */
+      padding-bottom: 0; /* Remove bottom padding */
+      margin-right: 3rem; /* Adjust margin as needed */
+    }
+  
+    .imagepost {
+      margin-right: 3rem; /* Adjust margin as needed */
+    }
+  
+    .post_footer {
+      margin-left: 1rem; /* Remove left margin on larger screens */
+    }
+  
+    .postpublish {
+      flex-direction: row; /* Revert to row layout for larger screens */
+      margin-right: 3rem; /* Adjust margin as needed */
+    }
+  }
+  
+  
