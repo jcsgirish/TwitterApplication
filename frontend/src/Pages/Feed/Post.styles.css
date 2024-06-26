@@ -1,0 +1,34 @@
+.post{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-bottom: 1px solid #1a91da;
+    margin-right: 3rem;
+}
+.post_avatar img{
+    border-radius: 5rem;
+    width: 50px;
+    margin-right: 0.5rem;
+}
+.imagepost{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+.post_footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.postpublish{
+ display: flex;
+ margin-right: 3rem;
+}
+.verifiedbadge{
+    color: #1a91da;
+}

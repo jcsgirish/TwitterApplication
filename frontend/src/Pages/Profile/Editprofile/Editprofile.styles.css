@@ -1,0 +1,37 @@
+.edit-profile-btn {
+    position: relative;
+    float: right;
+    top: 5.3rem;
+    background-color: #1a91da;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0c527e;
+}
+
+.save-btn {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    float: right;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    color: #1a91da;
+}
+
+.text-field {
+    margin-bottom: 1rem;
+}

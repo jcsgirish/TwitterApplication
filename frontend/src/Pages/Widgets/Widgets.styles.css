@@ -1,0 +1,51 @@
+.widgets {
+    flex: 0.4;
+}
+
+.widgets_Input {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    background-color: rgb(68, 67, 67);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 4rem;
+}
+
+.searchicon {
+    position: relative;
+    left: 10rem;
+    top: 0.5rem;
+    font-size: large;
+}
+
+.widgets_Input input {
+    background-color: black;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+}
+
+.Tweetscontainer {
+    overflow-y: auto;
+    height: 400px; /* Set height to control the scroll area */
+    margin-bottom: 3rem;
+    margin-left: 4rem; /* Align with input box */
+   
+}
+.Tweetscontainer::-webkit-scrollbar{
+    display: none;
+}
+
+.tweetembed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.widgets_container {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}

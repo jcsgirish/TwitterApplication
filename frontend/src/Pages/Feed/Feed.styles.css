@@ -1,0 +1,31 @@
+.Feed {
+  flex: 1;
+  border-right: 1px solid rgb(105, 104, 104);
+  width: 85vh;
+  height: 100vh;
+  overflow-y: auto;
+}
+.Feed::-webkit-scrollbar{
+  display: none;
+}
+
+.FeedHeader {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  width: 140%;
+  background-color: black;
+  z-index: 1001;
+  padding: 10px 5px ;
+}
+
+.feedborder {
+  margin-top: 0;
+}
+
+.FeedPosts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
