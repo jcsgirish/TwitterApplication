@@ -8,8 +8,9 @@
 # testing
 /coverage
 #secret
-.env
+
 /Firebase
+.env
 
 # production
 /build
