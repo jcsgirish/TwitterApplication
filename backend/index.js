@@ -6,7 +6,6 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 app.use(cors({
-  origin: 'https://your-frontend-domain.vercel.app',
   methods: 'GET,POST,PUT,DELETE,PATCH',
   credentials: true // if you need to include cookies in requests
 }));
