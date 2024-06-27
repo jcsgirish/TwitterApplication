@@ -6,6 +6,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 app.use(cors({
+  origin:'https://twitter-application-pi.vercel.app',
   methods: 'GET,POST,PUT,DELETE,PATCH',
   credentials: true // if you need to include cookies in requests
 }));
