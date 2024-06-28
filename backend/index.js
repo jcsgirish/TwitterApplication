@@ -72,7 +72,12 @@ async function run() {
     const filter = req.params;
     const profile = req.body;
     const options = {upsert: true };
-    const updateDoc = {$set: profile };
+    const updateDoc = { $set: {} };
+    for (const key in profile) {
+      if (profile[key] !== null && profile[key] !== undefined) {
+        updateDoc.$set[key] = profile[key];
+      }
+    }
     const result = await userCollection.updateOne(filter,updateDoc,options);
     res.json(result);
 });
