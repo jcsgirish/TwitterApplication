@@ -32,23 +32,25 @@ const SignIn = () => {
             }
         }, [error, Error]);
 
-    const HandleSubmit =(e)=>{
-        e.preventDefault()
-        createUserWithEmailAndPassword(email,password)
-
-        const user={
-            name,
-            email
-         }
-         axios.post(`http://localhost:5000/register`,user)
-
-
-
-        setEmail('')
-        setPassword('')
-        setName('')
-    
-    }
+        const HandleSubmit = async (e) => {
+            e.preventDefault();
+            try {
+              await createUserWithEmailAndPassword(email, password);
+          
+              const user = { name, email };
+              console.log('Sending user data to server:', user);
+          
+              const response = await axios.post('http://localhost:5000/register', user);
+              console.log('Server response:', response.data);
+          
+              setEmail('');
+              setPassword('');
+              setName('');
+            } catch (error) {
+              console.error('Error registering user:', error);
+            }
+          };
+          
  
    const Handlename=(e)=>
      setName(e.target.value)

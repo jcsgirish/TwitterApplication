@@ -6,14 +6,14 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 app.use(cors({
-   origin:'https://twitter-application-pvyjaw0ow-girishs-projects-e4ddeb20.vercel.app',
-   methods: 'GET,POST,PUT,DELETE,PATCH',
-   credentials: true 
+  origin:'https://twitter-application-pi.vercel.app/signup',
+  methods: 'GET,POST,PUT,DELETE,PATCH',
+  credentials: true 
 }));
+app.use(express.json()); 
 
 
-
-const uri = "mongodb+srv://Twitter_admin:OczIflmOZghSHgWJ@twitteradmin.0np7z19.mongodb.net/?retryWrites=true&w=majority&appName=Twitteradmin";
+  const uri = "mongodb+srv://Twitter_admin:OczIflmOZghSHgWJ@twitteradmin.0np7z19.mongodb.net/Twitter_admin?retryWrites=true&w=majority&appName=Twitteradmin";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -61,23 +61,27 @@ async function run() {
     res.json(result)
   })
 
-  app.post('/register',async(req,res)=>{
-    const user = req.body
-    const result= await userCollection.insertOne(user)
-    res.json(result)
-
-  })
+  app.post('/register', async (req, res) => {
+    try {
+      const user = req.body;
+      console.log('Received user data:', user);
+      const result = await userCollection.insertOne(user);
+      console.log('MongoDB insertion result:', result);
+  
+      res.json(result);
+    } catch (error) {
+      console.error('Error registering user:', error);
+      res.status(500).json({ error: 'Failed to register user' });
+    }
+  });
+  
+  
 
   app.patch('/userUpdates/:email', async (req, res) => {
     const filter = req.params;
     const profile = req.body;
     const options = {upsert: true };
-    const updateDoc = { $set: {} };
-    for (const key in profile) {
-      if (profile[key] !== null && profile[key] !== undefined) {
-        updateDoc.$set[key] = profile[key];
-      }
-    }
+    const updateDoc = {$set: profile };
     const result = await userCollection.updateOne(filter,updateDoc,options);
     res.json(result);
 });
