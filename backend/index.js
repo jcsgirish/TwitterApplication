@@ -6,9 +6,9 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 app.use(cors({
-  origin:'https://twitter-application-pi.vercel.app',
-  methods: 'GET,POST,PUT,DELETE,PATCH',
-  credentials: true // if you need to include cookies in requests
+   origin:'https://twitter-application-pvyjaw0ow-girishs-projects-e4ddeb20.vercel.app',
+   methods: 'GET,POST,PUT,DELETE,PATCH',
+   credentials: true 
 }));
 
 
@@ -40,9 +40,12 @@ async function run() {
     res.json(user)
   })
 
-  app.get('/Loggeduser' , async(req,res)=>{
+  app.get('/Loggeduser', async(req,res)=>{
     const email = req.query.email
+    console.log(email)
+
     const user =  await userCollection.find({email:email}).toArray()
+    console.log(user)
     res.json(user)
   })
   
