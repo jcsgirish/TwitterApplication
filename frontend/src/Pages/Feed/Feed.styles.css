@@ -1,13 +1,13 @@
 .Feed {
-  flex: 1;
+  flex: 0.8;
   border-right: 1px solid rgb(105, 104, 104);
   width: 80%;
   height: 100%;
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  overflow-y: auto; 
 }
 
 .Feed::-webkit-scrollbar {
-  display: none; /* Hide scrollbars */
+  display: none;
 }
 
 .FeedHeader {

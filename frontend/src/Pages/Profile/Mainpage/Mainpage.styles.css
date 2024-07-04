@@ -87,6 +87,10 @@
   background-color: rgb(27, 27, 27);
   border-top: 1px solid rgb(177, 177, 180);
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   bottom: 10em;
 }
 
@@ -101,7 +105,7 @@
   position: relative !important;
   bottom: 5rem !important;
   height: 32vh !important;
-  width: 77vh !important;
+  width: 92vh !important;
   margin-top: 2rem !important;
 }
 

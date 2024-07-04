@@ -10,7 +10,7 @@
 #secret
 
 /Firebase
-.env
+
 
 # production
 /build

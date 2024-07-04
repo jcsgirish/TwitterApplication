@@ -36,12 +36,8 @@ const SignIn = () => {
             e.preventDefault();
             try {
               await createUserWithEmailAndPassword(email, password);
-          
               const user = { name, email };
-              console.log('Sending user data to server:', user);
-          
-              const response = await axios.post('http://localhost:5000/register', user);
-              console.log('Server response:', response.data);
+        await axios.post('http://localhost:5000/register', user);
           
               setEmail('');
               setPassword('');

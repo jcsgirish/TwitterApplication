@@ -30,7 +30,6 @@ const Loginpage =()=>{
     const HandleSubmit =(e)=>{
         e.preventDefault()
         signInWithEmailAndPassword(email,password)
-        console.log("logged")
         setEmail('')
         setPassword('')
         setName('')

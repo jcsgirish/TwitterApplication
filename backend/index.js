@@ -9,7 +9,7 @@ app.use(cors({
   origin:'https://twitter-application-pi.vercel.app',
   methods: 'GET,POST,PUT,DELETE,PATCH',
   allowedHeaders: ['Content-Type'],
-  credentials: true 
+ credentials: true 
 }));
 app.use(express.json()); 
 
@@ -43,10 +43,9 @@ async function run() {
 
   app.get('/Loggeduser', async(req,res)=>{
     const email = req.query.email
-    console.log(email)
 
     const user =  await userCollection.find({email:email}).toArray()
-    console.log(user)
+
     res.json(user)
   })
   
@@ -65,9 +64,9 @@ async function run() {
   app.post('/register', async (req, res) => {
     try {
       const user = req.body;
-      console.log('Received user data:', user);
+     
       const result = await userCollection.insertOne(user);
-      console.log('MongoDB insertion result:', result);
+
   
       res.json(result);
     } catch (error) {

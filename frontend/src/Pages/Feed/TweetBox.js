@@ -68,11 +68,11 @@ function TweetBox() {
       <div className="tweetBox__input">
         <div className='TwitterAvatar'>
           {loggeduser[0]?.profileImage ? (
-            <img  style={{width:'15%',
-               borderRadius:'1rem',
+            <img  style={{width:'8%',
+               borderRadius:'5rem',
                 position:'relative',
                 display:'flex', 
-                bottom:'3rem', }}
+                bottom:'1rem', }}
                 src={profileImage}
                 alt="Profile"/>
           ) : (

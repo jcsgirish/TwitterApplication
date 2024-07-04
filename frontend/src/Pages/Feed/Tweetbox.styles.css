@@ -4,19 +4,18 @@
   z-index: 1000;
   margin-top: 1rem;
   border-bottom: 1px solid #1a91da;
-  height: 8rem; /* Adjust height as needed */
+  height: 8rem;
 }
 
 .InputTwitter {
   background-color: black;
   color: white;
-  font-size: x-large; /* Reduced font size */
-  width: 100%; /* Full width on smaller screens */
+  font-size: x-large; 
+  width: 90%;
   outline: none;
-  padding: 8px; /* Adjust padding as needed */
+  padding: 8px;
   position: relative;
-
-  bottom: 8rem;
+  bottom: 6rem;
   left: 10rem;
 }
 
@@ -28,16 +27,16 @@
 
 .tweetBox__input input {
   flex: 1;
-  padding: 5px; /* Reduced padding */
-  font-size: 14px; /* Reduced font size */
+  padding: 5px; 
+  font-size: 14px; 
   border: none;
   cursor: pointer;
-  margin-bottom: 0.5rem; /* Adjust margin to control spacing */
+  margin-bottom: 0.5rem; 
 }
 
 .tweetBox__imageInput {
-  margin: 5px 0; /* Reduced margin */
-  font-size: 1.8rem; /* Reduced font size */
+  margin: 5px 0;
+  font-size: 1.8rem;
   color: #1a91da;
   display: flex;
   justify-content: center;
@@ -64,13 +63,16 @@
 .tweetBox__tweetButton:hover {
   background-color: #1a91da;
 }
+.TwitterAvatar{
+
+}
 
 @media (max-width: 768px) {
   .tweetBox__input {
     position: relative;
     top: 1rem;
-    flex-direction: column; /* Stack input fields vertically on smaller screens */
-    align-items: stretch; /* Stretch items to full width */
+    flex-direction: column; 
+    align-items: stretch;
   }
   .tweetBox__imageInput{
     font-size: 1.5rem;
